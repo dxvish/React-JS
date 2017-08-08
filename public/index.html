@@ -2,14 +2,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-		<script src ="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-		<script src ="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script>
-		<script src ="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
 	</head>
 	<body>
 <!--Acts as a container to load all the react contents -->
 		<div id="app"></div>
-<!--Tells the babel that this snipped should be read by babel 
+<!--Tells the babel that this snipped should be read by babel
 THis is JSX Code that gets compiled by Babel. Create a .JSX file and place the below code on it so its easy for us to maintain the code.
 		<script type="text/babel">
 			ReactDOM.render(<h1>HELLO REACT</h1>,
@@ -17,6 +14,7 @@ THis is JSX Code that gets compiled by Babel. Create a .JSX file and place the b
 			);
 		</script>
 -->
-		<script type="text/babel" src="app.jsx"></script>
+<!-- Bundle.js will be created by webpack -->
+		<script src="bundle.js"></script>
 	</body>
 </html>
